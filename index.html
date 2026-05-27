@@ -267,41 +267,139 @@ footer { background: var(--bg); border-top: 1px solid var(--surface-border); pad
   </div>
 </section>
 
-<section id="contacto" style="background:var(--surface-1);border-top:1px solid var(--surface-border)">
-  <div class="contact-wrap">
-    <div class="fi">
-      <div class="s-label">Hablemos</div>
-      <h2 class="contact-h">¿Listo para crecer<br>en <em>Iberia</em>?</h2>
-      <p class="contact-sub">Cuéntanos tu proyecto. Analizamos tu situación y te presentamos una propuesta sin compromiso.</p>
-      <div class="info-list">
-        <div class="info-row"><span class="info-key">Sede</span><span class="info-val">Madrid, España</span></div>
-        <div class="info-row"><span class="info-key">Email</span><span class="info-val">hola@helikem.com</span></div>
-        <div class="info-row"><span class="info-key">Teléfono</span><span class="info-val">+34 900 000 000</span></div>
-        <div class="info-row"><span class="info-key">Mercados</span><span class="info-val">España · Portugal</span></div>
-        <div class="info-row"><span class="info-key">Respuesta</span><span class="info-val">Menos de 48 horas</span></div>
+<section id="contacto" class="py-32 px-6 bg-deep text-white relative overflow-hidden">
+
+  <div class="absolute right-0 bottom-0 w-1/2 h-full bg-teal opacity-10 rounded-tl-full blur-3xl pointer-events-none"></div>
+
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 relative z-10">
+
+    <!-- LEFT SIDE -->
+    <div>
+
+      <span class="inline-block px-3 py-1 bg-turquoise text-deep text-xs font-bold uppercase mb-6">
+        Hablemos
+      </span>
+
+      <h2 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-tight mb-8">
+        ¿Listo para crecer<br />
+        en <span class="text-turquoise">Iberia?</span>
+      </h2>
+
+      <p class="text-white/70 mb-12 max-w-md">
+        Cuéntanos tu proyecto. Analizamos tu situación y te presentamos una propuesta sin compromiso.
+      </p>
+
+      <div class="space-y-5 text-sm">
+
+        <div class="flex gap-6">
+          <span class="text-turquoise font-bold w-24">SEDE</span>
+          <span>Madrid, España</span>
+        </div>
+
+        <div class="flex gap-6">
+          <span class="text-turquoise font-bold w-24">EMAIL</span>
+          <span>hello@helikem.com</span>
+        </div>
+
+        <div class="flex gap-6">
+          <span class="text-turquoise font-bold w-24">TELÉFONO</span>
+          <span>+34 900 000 000</span>
+        </div>
+
+        <div class="flex gap-6">
+          <span class="text-turquoise font-bold w-24">MERCADOS</span>
+          <span>España · Portugal</span>
+        </div>
+
+        <div class="flex gap-6">
+          <span class="text-turquoise font-bold w-24">RESPUESTA</span>
+          <span>Menos de 48 horas</span>
+        </div>
+
       </div>
+
     </div>
-    <div class="fi">
-      <div class="form-row">
-        <div class="form-g"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
-        <div class="form-g"><label>Empresa</label><input type="text" placeholder="Tu empresa"></div>
-      </div>
-      <div class="form-row">
-        <div class="form-g"><label>Email</label><input type="email" placeholder="tu@empresa.com"></div>
-        <div class="form-g"><label>Teléfono</label><input type="text" placeholder="Tu número"></div>
-      </div>
-      <div class="form-g"><label>¿Cómo nos has conocido?</label>
-        <select><option value="" disabled selected>Selecciona una opción</option><option>Motores de búsqueda como Google, Bing,...</option><option>Redes sociales como LinkedIn o Instagram</option><option>Recomendación</option><option>Ferias y congresos</option><option>Anuncios Publicitarios</option><option>Otro</option></select>
-      </div>
-      <div class="form-g"><label>Servicio de interés</label>
-        <select><option value="" disabled selected>Selecciona un servicio</option><option>Marketing Digital</option><option>Eventos & BTL</option><option>Implantación de marca en Iberia</option><option>Análisis de negocio</option><option>Publicidad creativa</option><option>Consultoría de expansión</option><option>Varios / No sé aún</option></select>
-      </div>
-      <div class="form-g"><label>Cuéntanos tu proyecto</label>
-        <textarea placeholder="Cuéntanos sobre tu producto, sobre tu marca y qué quieres conseguir en el mercado ibérico"></textarea>
-      </div>
-      <button class="btn-submit" id="submitBtn">Enviar mensaje →</button>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="bg-[#0a0f14] p-10 rounded-3xl border border-white/10">
+
+      <form class="space-y-6">
+
+        <!-- ROW 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <input
+            type="text"
+            placeholder="Nombre"
+            class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg focus:border-turquoise outline-none"
+          />
+
+          <input
+            type="text"
+            placeholder="Empresa"
+            class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg focus:border-turquoise outline-none"
+          />
+
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+          <input
+            type="email"
+            placeholder="Email"
+            class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg focus:border-turquoise outline-none"
+          />
+
+          <input
+            type="tel"
+            placeholder="Teléfono"
+            class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg focus:border-turquoise outline-none"
+          />
+
+        </div>
+
+        <!-- HOW DID YOU KNOW -->
+        <select class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg text-white/70">
+          <option>¿Cómo nos has conocido?</option>
+          <option>Google</option>
+          <option>Redes Sociales</option>
+          <option>Recomendación</option>
+          <option>Otro</option>
+        </select>
+
+        <!-- SERVICE -->
+        <select class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg text-white/70">
+          <option>Servicio de interés</option>
+          <option>Implantación de marcas</option>
+          <option>Consultoría de expansión</option>
+          <option>Eventos corporativos</option>
+          <option>Marketing digital</option>
+          <option>BTL & Trade marketing</option>
+          <option>Análisis de negocio</option>
+        </select>
+
+        <!-- MESSAGE -->
+        <textarea
+          rows="5"
+          placeholder="Cuéntanos tu proyecto"
+          class="w-full bg-deep border border-white/10 px-4 py-3 rounded-lg focus:border-turquoise outline-none"
+        ></textarea>
+
+        <!-- BUTTON -->
+        <button
+          type="submit"
+          class="w-full bg-turquoise text-deep py-4 rounded-xl font-bold hover:bg-white transition-colors"
+        >
+          ENVIAR MENSAJE →
+        </button>
+
+      </form>
+
     </div>
+
   </div>
+
 </section>
 
 <footer>
